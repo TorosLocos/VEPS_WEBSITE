@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .image-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+    }
+    .image-header img {
+        max-width: 100%;
+        max-height: 1000px;
+    }
+</style>
+</head>
+<body id="myPage">
+
+
+  <!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>VEPS</a>
+  <a href="#Gruppemedlemmer" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Gruppemedlemmer</a>
+  <a href="#sprinter" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sprinter</a>
+  <a href="#Kontakt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontakt</a>
+  </div>
+ </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#Gruppemedlemmer" class="w3-bar-item w3-button">Gruppemedlemmer</a>
+    <a href="#sprinter" class="w3-bar-item w3-button">Sprinter</a>
+    <a href="#Kontaktinformasjon" class="w3-bar-item w3-button">Kontakt</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity image-header">
+      <img src="Bilder/VEPS-Gif.gif">
+    </div>
+  
+
+<!-- Gruppe Container -->
+<div class="w3-container w3-padding-64 w3-center" id="Gruppemedlemmer">
+<h2><b>Våre Gruppemedlemmer</b></h2>
+<p>Vi er en gruppe studenter studenter fra Universitetet i Sør-Øst Norge, campus Kongsberg. VI ER VEPS! </p>
+
+<div class="w3-row"><br>
+  <div class="w3-quarter">
+    <img src="Bilder/Medlemmer/Ilir.jpg" alt="Ilir Bylykbashi" style="max-width: 300px; height: auto; border-radius: 50%; transition: opacity 0.3s ease;" class="w3-circle w3-hover-opacity">
+    <h2><b>Ilir Bylykbashi</b></h2>
+    <h5><b>Data ingeniør</b></h5>
+    <p>Gruppeleder & risikoansvarlig</p>
+  </div>
+  
+
+  <div class="w3-quarter">
+    <img src="Bilder/Medlemmer/John.jpg" alt="John Frederick Lærum" style="max-width: 300px; height: auto; border-radius: 50%; transition: opacity 0.3s ease;" class="w3-circle w3-hover-opacity">
+    <h2><b>John Frederick Lærum</b></h2>
+    <h5><b>Data ingeniør</b></h5>
+    <p>Kommunikasjon & sosiale medier</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Bilder/Medlemmer/Maria.jpg" alt="Maria Skulstad" style="max-width: 300px; height: auto; border-radius: 50%; transition: opacity 0.3s ease;" class="w3-circle w3-hover-opacity">
+    <h2><b>Maria Skulstad</b></h2>
+    <h5><b>Maskin ingeniør</b></h5>
+    <p>Dokumentasjon & prosjektmodell </p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Bilder/Medlemmer/Mustafa.jpg" alt="Mustafa Sadaat" style="max-width: 300px; height: auto; border-radius: 50%; transition: opacity 0.3s ease;" class="w3-circle w3-hover-opacity">
+    <h2><b>Mustafa Sadaat</b></h2>
+    <h5><b>Elektronikk ingeniør</b></h5>
+    <p>Økonomi & innkjøp</p>
+  </div>
+  
+</div>
+</div>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1700px;margin-top:100px">
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-container w3-padding-64 w3-center" id="sprinter">
+      <h2>SPRINTER</h2>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_1.jpg" alt="Sprint 1" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 1</h3>
+      <p><b>04.01 - 14.01</b></p>
+      <p>Dette var den første sprinten vi hadde, der vi lagde dokumenter som kunne brukes gjennom hele året, samt delte ansvar for bacheloroppgaven.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_2.png" alt="Sprint 2" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 2</h3>
+      <p><b>15.01 - 28.01</b></p>
+      <p>Etter den første sprinten måtte vi fokusere på den kommende presentasjonen og planlegge hvordan vi ønsket å planlegge dette.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_3.jpeg" alt="Sprint 3" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 3</h3>
+      <p><b>29.01 - 09.02</b></p>
+      <p>Denne uken var presentasjonen hovedfokuset. Vi ønsket å formidle hva vi har planlagt å gjøre i denne bacheloroppgaven og, mer spesifikt, hvilke problemstillinger vi ønsker å fokusere på.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_4.jpg" alt="Sprint 4" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 4</h3>
+      <p><b>12.02 - 25.02</b></p>
+      <p> I denne sprinten begynte vi å fokusere på en prototype. Vi undersøkte løsninger for å implementere vertikal sykkelparkering og identifiserte de nødvendige komponentene. Denne sprinten involverte hovedsakelig planlegging av hvordan vi kan utforme en løsning for vertikal sykkelparkering for å lage en prototype som demonstrerer den faktiske funksjonen med å løfte en sykkel. </p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_5.gif" alt="Sprint 5" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 5</h3>
+      <p><b>25.02 - 15.03</b></p>
+      <p> Her klarte vi å lage en prototype og teste funksjonen med å løfte en sykkel til en vertikal posisjon. Varigheten av denne sprinten ble forlenget fordi den var så nær presentasjonsdatoen. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_6.jpeg" alt="Sprint 6" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 6</h3>
+      <p><b>18.03 - 31.03</b></p>
+      <p>Denne sprinten var hovedsakelig dedikert til forskning og forberedelse til den andre presentasjonen, der vi hadde som mål å vise mer av prototypen og våre potensielle design for dette prosjektet.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_7.jpg" alt="Sprint 7" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 7</h3>
+      <p><b>01.04 - 14.04</b></p>
+      <p>Etter den siste sprinten møttes vi med arbeidsgiveren på deres kontor for en utvidet workshopøkt. Vi diskuterte den beste tilnærmingen for oppgaven, bestilte deler og gjennomgikk de ønskede funksjonene. Vi mottok omfattende tilbakemeldinger som en tverrfaglig gruppe om hvordan vi kan samarbeide effektivt med Bikeloop.</p>
+      </div>
+    <div class="w3-quarter">
+      <img src="Bilder/Sprint_8.jpg" alt="Sprint 8" style="width:100%; height: 250px; object-fit: cover;">
+      <h3>Sprint 8</h3>
+      <p><b>16.04 - 30.04</b></p>
+      <p>I nest siste sprint fokuserer vi på en siste innsats ved å konsentrere oss om våre respektive ekspertområder, med sikte på å etablere de fleste av de funksjonene vi ønsker før vi fullstendig monterer prototypen vi har til hensikt å presentere på utstillingen.</p>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-16 w3-center">
+    <img src="TBD" alt="Sprint 9" style="width:50%; height: 500px; object-fit: cover;">
+    <h3>Last Sprint - Sprint 9</h3>
+    <p>TBD</p>
+</div>
+
+
+
+
+<!-- Container -->
+<!-- Image of location/map -->
+<img src="Bilder\MAPS.png" class="w3-image w3-greyscale-min" style="width:100%; height: 800px; object-fit: cover;">
+
+
+
+<!-- Footer (Contact Section) -->
+
+
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center" id="Kontakt">
+  
+  <h4>Kontakt oss her!</h4>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <!-- Instagram Link -->
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/vepsenviro/" title="Instagram">
+      Instagram <i class="fa fa-instagram"></i>
+    </a>
+
+    <!-- Mail Link -->
+    <a class="w3-button w3-large w3-teal" href="mailto:vepsenviro@gmail.com" title="E-Mail" style="margin-left: 20px;">
+      Mail <i class="fa fa-envelope"></i>
+    </a>
+
+    <!-- Location Link -->
+    <a class="w3-button w3-large w3-teal" href="https://www.google.com/maps/place/Kirkegata+4,+3616+Kongsberg/@59.6647169,9.6447508,563m/data=!3m1!1e3!4m6!3m5!1s0x4640d07c3e0cac21:0xab4005034a4f55db!8m2!3d59.6646728!4d9.6456689!16s%2Fg%2F11c43w14d1!5m2!1e3!1e4?entry=ttu" title="Location" style="margin-left: 20px;">
+      Lokasjon <i class="fa fa-map-marker"></i>
+    </a>
+  </div>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
